@@ -5,7 +5,22 @@
 数据类型除了指明数据的解释方式，还指明了数据的长度。因为在C语言中，每一种数据类型所占用的字节数都是固定的，知道了数据类型，也就知道了数据的长度。
 
 ![alt text](./imgs/1492151997(1.png "")
-![alt text](./imgs/1492152173(1.png "")
+
+```C
+#include <stdio.h>
+int main()
+{
+    short a = 10;
+    int b = 100;
+    long c = 1000;
+    char d = 'X';
+   
+    int a_length = sizeof a;
+    int b_length = sizeof(int);
+    printf("a=%d, b=%d, c=%d, d=%d\n", a_length, b_length, sizeof(c), sizeof(char));
+    return 0;
+}
+```
 
 在符号位中，用0表示正数，用1表示负数。例如 int 类型的 -10、+16 在内存中的表示如下：
 
