@@ -44,3 +44,4 @@ Type=Application
 StartupNotify=true
 Categories=Application;Development;
 ```
+http://blog.bossma.cn/mono-2/ubuntu-application-launcher-has-not-been-marked-as-trusted-solution/
