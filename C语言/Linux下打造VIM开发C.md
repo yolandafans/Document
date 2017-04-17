@@ -19,3 +19,8 @@ sudo rm /var/lib/dpkg/updates/*
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
+## vim基本配置
+```
+syntax on " 语法高亮
+```
