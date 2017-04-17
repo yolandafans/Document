@@ -44,4 +44,5 @@ Type=Application
 StartupNotify=true
 Categories=Application;Development;
 ```
+Ubuntu中应用程序启动器“XXX.desktop”还没有被标记为可信任的问题：
 http://blog.bossma.cn/mono-2/ubuntu-application-launcher-has-not-been-marked-as-trusted-solution/
