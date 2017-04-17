@@ -32,16 +32,15 @@ ln -s /usr/local/jdk/jre/ jre
 ```
 
 ```
-  配置eclipse桌面快捷方式
-  1 [Desktop Entry]
-  2 Encoding=UTF-8
-  3 Name=Eclipse
-  4 Comment=client
-  5 Exec=/usr/local/eclipse/eclipse
-  6 Icon=/usr/local/eclipse/icon.xpm
-  7 Terminal=false
-  8 Type=Application
-  9 StartupNotify=true
- 10 Categories=Application;Development;
-
+配置eclipse桌面快捷方式
+[Desktop Entry]
+Encoding=UTF-8
+Name=Eclipse
+Comment=client
+Exec=/usr/local/eclipse/eclipse
+Icon=/usr/local/eclipse/icon.xpm
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Application;Development;
 ```
