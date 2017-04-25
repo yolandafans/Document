@@ -124,6 +124,16 @@ do {\
 	}\
 } while(0)
 ```
++ 宏定义中的连接符##：连接符##用来将两个token连接为一个token，但它不可以位于第一个token之前or最后一个token之后。注意这里连接的对象只要是token就行，而不一定是宏参数,但是##又必须位于宏定义中才有效，因其为编译期概念
+```C
+#define PARSER(N) printf("token" #N " = %d\n", token##N)
+int token64 = 64;
+
+//调用
+PARSER(64);
+//解析为：
+printf("token" "64" " = %d\n", token64);
+```
 
 ## C语言变成环境
 + 头文件查找
