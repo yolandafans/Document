@@ -134,6 +134,17 @@ PARSER(64);
 //解析为：
 printf("token" "64" " = %d\n", token64);
 ```
++ 这种能够根据不同情况编译不同代码、产生不同目标文件的机制，称为条件编译。条件编译是预处理程序的功能，不是编译器的功能
+```C
+#if _WIN32
+	system("color 0c");
+	printf("http://c.biancheng.net\n");
+#elif __linux__
+	printf("\033[22;31mhttp://c.biancheng.net\n\033[22;30m");
+#else
+	printf("http://c.biancheng.net\n");
+#endif
+```
 
 ## C语言变成环境
 + 头文件查找
