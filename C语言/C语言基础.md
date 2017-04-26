@@ -145,6 +145,12 @@ printf("token" "64" " = %d\n", token64);
 	printf("http://c.biancheng.net\n");
 #endif
 ```
++ #if 后面跟的是“整型常量表达式”，而 #ifdef 和 #ifndef 后面跟的只能是一个宏名，不能是其他的
++ #ifdef 可以认为是 #if defined 的缩写
+```C
+#ifdef M
+#if (defined NUM1 && defined NUM2)
+```
 
 ## C语言变成环境
 + 头文件查找
